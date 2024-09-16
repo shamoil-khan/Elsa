@@ -1,5 +1,7 @@
 #contact {
   justify-content: center;
+  min-height: min-content;
+  padding-bottom: 20px;
 }
 
 .contact-container {
