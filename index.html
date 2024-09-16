@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/ICON.png" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/home.css" />
+    <link rel="stylesheet" href="./CSS/about.css" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
+    <link rel="stylesheet" href="./CSS/footer.css" />
+    <title>Elsa</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="">Elsa</a></div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="HTML/design.html">Designs</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="icons">
+        <label>
+          <div class="icon"></div>
+        </label>
+      </div>
+    </header>
+
+    <section id="home">
+      <div class="name">
+        <div class="words">
+          <span>E</span><span>l</span><span>s</span><span>a</span>
+        </div>
+        <p>Design your world</p>
+        <a href="HTML/design.html" class="designBtn">See Designs</a>
+      </div>
+
+      <div class="designDiv">
+        <div class="design"></div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="left">
+        <h1>About</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate
+          velit atque, quae iure aut cumque esse dolor optio eius a ratione hic
+          eum nulla odit impedit fugiat explicabo amet deleniti. Lorem ipsum
+          dolor sit amet consectetur, adipisicing elit. Voluptate velit atque,
+          quae iure aut cumque esse dolor optio eius a ratione hic eum nulla
+          odit impedit fugiat explicabo amet deleniti. Lorem ipsum dolor sit
+          amet consectetur, adipisicing elit. Voluptate velit atque, quae iure
+          aut cumque esse dolor optio eius a ratione hic eum nulla odit impedit
+          fugiat explicabo amet deleniti.
+        </p>
+        <a href="#contact" class="contactBtn">Contact Us</a>
+      </div>
+
+      <div class="right">
+        <div class="animation">
+          <div class="inner one"></div>
+          <div class="inner two"></div>
+          <div class="inner three"></div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Contact Me!</h2>
+
+        <form action="#">
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Full Name"
+                id="name"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Full Name can't be blank</div>
+            </div>
+
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Email Address"
+                id="email"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt email">Email Address can't be blank</div>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Phone Number"
+                id="phone"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Phone Number can't be blank</div>
+            </div>
+
+            <div class="input-field field">
+              <input
+                type="text"
+                placeholder="Subject"
+                id="subject"
+                class="item"
+                autocomplete="off"
+              />
+              <div class="error-txt">Subject can't be blank</div>
+            </div>
+          </div>
+
+          <div class="textarea-field field">
+            <textarea
+              name=""
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              class="item"
+              autocomplete="off"
+            ></textarea>
+            <div class="error-txt">Message can't br blank</div>
+          </div>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <h2>Elsa</h2>
+      <p>Design Your World</p>
+
+      <h3>Follow me on</h3>
+
+      <div class="social-links">
+        <div class="link" data-text="YouTube"></div>
+        <div class="link" data-text="Facebook"></div>
+        <div class="link" data-text="Twitter"></div>
+        <div class="link" data-text="Linkedin"></div>
+      </div>
+    </footer>
+
+    <script src="../JS/app.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

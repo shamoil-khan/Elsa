@@ -1,0 +1,136 @@
+@font-face {
+  font-family: Elsa Fonts;
+  src: url(../Fonts/lucida\ calligraphy\ italic.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Elsa Fonts", Arial Rounded MT, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  --main-color: #7358ee;
+  background: #f9f9f9;
+  overflow-x: hidden;
+  overflow: auto;
+}
+
+::selection {
+  background: #7458ee;
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  background: transparent;
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background: #7458eeec;
+}
+
+body h2 {
+  position: absolute;
+  top: 10px;
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--main-color);
+}
+
+.allDesigns {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 16/16;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  margin: 10px;
+  border-radius: 15px;
+  border: 5px solid var(--main-color);
+  overflow: hidden;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+.card.preview {
+  pointer-events: none;
+}
+
+.sample {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #7458ee5b;
+  z-index: 100;
+  overflow: hidden;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  pointer-events: all;
+}
+
+.sample .back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.sample.show {
+  display: flex;
+}
+
+.sample img {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}

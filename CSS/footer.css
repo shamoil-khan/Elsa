@@ -1,0 +1,116 @@
+#footer {
+  --main-color: rgb(116, 88, 238);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 38vh;
+  background: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 20px;
+
+  ::selection {
+    background: #917ee6;
+  }
+
+  h2 {
+    color: #fff;
+    font-family: ElsaLucida, Arial Rounded MT, sans-serif;
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-weight: 900;
+  }
+
+  p {
+    color: #fff;
+    font-family: ElsaLucida, Arial Rounded MT, sans-serif;
+  }
+
+  h3 {
+    color: #fff;
+    margin-top: 20px;
+    letter-spacing: 1px;
+  }
+
+  .social-links {
+    position: relative;
+    margin-top: 20px;
+    width: 300px;
+    height: 50px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .link {
+      position: relative;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background-image: url(../img/youtube-logo-24.png);
+      background-repeat: no-repeat;
+      background-size: 60%;
+      background-position: center;
+      border: 2px solid #fff;
+      cursor: pointer;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link:nth-child(2) {
+      background-image: url(../img/facebook-logo-24.png);
+    }
+
+    .link:nth-child(3) {
+      background-image: url(../img/twitter-logo-24.png);
+    }
+
+    .link:nth-child(4) {
+      background-image: url(../img/linkedin-logo-24.png);
+    }
+
+    .link::after {
+      content: attr(data-text);
+      position: absolute;
+      margin-top: 70px;
+      width: 60px;
+      height: 15px;
+      background: #0000007c;
+      color: #fff;
+      box-shadow: 0 0 10px #00000081;
+      border-radius: 4px;
+      pointer-events: none;
+      transition: 0.3s ease;
+      opacity: 0;
+      transition-delay: 0.2s;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .link:hover:after {
+      transition-delay: 0.4s;
+      opacity: 1;
+    }
+
+    .link:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 10px #000;
+    }
+
+    .link:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media (max-width: 312px) {
+  #footer .social-links {
+    width: 250px;
+  }
+}
